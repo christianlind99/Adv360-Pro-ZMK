@@ -10,25 +10,25 @@
       #include "version.dtsi"
       #ifndef VERSION_MACRO
 
-        kp_aa: kp_aa {
+        kp_aa: new_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp AMPS &kp K &kp P &kp SPACE &kp LS(L) &kp LS(C) &kp LPAR &kp LS(K) &kp LS(C) &kp UNDER &kp LS(A) &kp RPAR>;
-            label = "KP_AA";
+            bindings = <&kp LC(A)>;
+            label = "NEW_MACRO";
         };
 
         kp_ae: kp_ae {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp AMPS &kp K &kp P &kp SPACE &kp LS(L) &kp LS(C) &kp LPAR &kp LS(K) &kp LS(C) &kp UNDER &kp LS(Q) &kp RPAR>;
+            bindings = <&kp LC(Q)>;
             label = "KP_AE";
         };
 
-        kp_oe: kp_oe {
+        kp_oo: kp_oo {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp AMPS &kp K &kp P &kp SPACE &kp LS(L) &kp LS(C) &kp LPAR &kp LS(K) &kp LS(C) &kp UNDER &kp LS(O) &kp RPAR>;
-            label = "KP_OE";
+            bindings = <&kp LC(O)>;
+            label = "KP_OO";
         };
 
         #endif
