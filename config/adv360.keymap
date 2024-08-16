@@ -83,7 +83,7 @@
         mod {
             bindings = <
 &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2    &bt BT_SEL 3       &bt BT_SEL 4  &none                                                  &trans                  &none             &none              &none         &none         &none  &none
-&none  &none         &none         &kp PIPE        &kp DOUBLE_QUOTES  &none         &bootloader                                            &bootloader             &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp C_VOL_DN  &kp C_VOL_UP  &none  &none
+&none  &none         &none         &kp PIPE        &kp DOUBLE_QUOTES  &none         &bootloader                                            &bootloader             &kp C_PAUSE       &kp RIGHT_BRACE    &kp C_VOL_DN  &kp C_VOL_UP  &none  &none
 &none  &none         &kp EQUAL     &kp UNDERSCORE  &kp SLASH          &kp QUESTION  &kp STAR     &none  &none      &bt BT_CLR  &none       &rgb_ug RGB_MEFS_CMD 5  &kp LEFT          &kp DOWN           &kp UP_ARROW  &kp RIGHT     &none  &none
 &none  &none         &kp HASH      &kp PLUS        &kp MINUS          &kp TILDE                         &none      &none                                           &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none         &none         &none  &none
 &none  &none         &none         &none           &none                            &none        &none  &none      &none       &bl BL_TOG  &rgb_ug RGB_TOG                           &bl BL_INC         &bl BL_DEC    &none         &none  &none
