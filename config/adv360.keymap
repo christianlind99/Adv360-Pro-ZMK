@@ -10,11 +10,25 @@
       #include "version.dtsi"
       #ifndef VERSION_MACRO
 
-        macro_ver: macro_ver {
+        kp_aa: kp_aa {
             compatible = "zmk,behavior-macro";
-            label = "macro_version";
             #binding-cells = <0>;
-            bindings = <&kp RET>;
+            bindings = <&none &kp AMPS &kp K &kp P &kp SPACE &kp LS(L) &kp LS(C) &kp LPAR &kp LS(K) &kp LS(C) &kp UNDER &kp LS(A) &kp RPAR>;
+            label = "KP_AA";
+        };
+
+        kp_ae: kp_ae {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp AMPS &kp K &kp P &kp SPACE &kp LS(L) &kp LS(C) &kp LPAR &kp LS(K) &kp LS(C) &kp UNDER &kp LS(Q) &kp RPAR>;
+            label = "KP_AE";
+        };
+
+        kp_oe: kp_oe {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp AMPS &kp K &kp P &kp SPACE &kp LS(L) &kp LS(C) &kp LPAR &kp LS(K) &kp LS(C) &kp UNDER &kp LS(O) &kp RPAR>;
+            label = "KP_OE";
         };
 
         #endif
@@ -38,11 +52,11 @@
 
         default_layer {
             bindings = <
-&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &tog 1                                                            &mo 3      &kp N6  &kp N7  &kp N8     &kp N9    &kp N0            &kp MINUS
-&kp TAB    &kp Q      &kp W     &kp E     &kp R      &kp T   &none                                                             &none      &kp Y   &kp U   &kp I      &kp O     &kp P             &kp SEMICOLON
-&kp ESC    &kp A      &kp S     &kp D     &kp F      &kp G   &none     &kp LCTRL           &kp LALT      &kp LGUI   &kp RCTRL  &none      &kp H   &kp J   &kp K      &kp L     &kp LEFT_BRACKET  &kp SINGLE_QUOTE
-&kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B                                 &kp HOME      &kp PG_UP                        &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH          &kp RSHFT
-&mo 2      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BSPC  &lt 3 LEFT_COMMAND  &kp END       &mo 3      &kp ENTER  &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT          &mo 2
+&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &tog 1                                                               &mo 3      &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
+&kp TAB    &kp Q      &kp W     &kp E     &kp R      &kp T   &none                                                                &none      &kp Y   &kp U   &kp I      &kp O     &kp P     &kp_aa
+&kp ESC    &kp A      &kp S     &kp D     &kp F      &kp G   &none      &kp LEFT_COMMAND  &kp LALT      &kp LGUI       &kp RCTRL  &none      &kp H   &kp J   &kp K      &kp L     &kp_oe    &kp_ae
+&kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B                                &kp HOME      &kp PG_UP                            &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
+&mo 2      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp SPACE  &mo 3             &kp END       &kp PAGE_DOWN  &kp ENTER  &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mo 2
             >;
         };
 
